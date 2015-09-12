@@ -24,7 +24,7 @@ try
 		getActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
 		getActionBar().setCustomView(R.layout.actionbar);
 
-	view=	getActionBar().getCustomView();
+	view=	getActionBar().getCustomView(); 
 //		final ActionBar ab = getActionBar();    
 //	    ab.setDisplayShowHomeEnabled(false); 
 //	    ab.setDisplayShowTitleEnabled(false);     

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+        android:orientation="vertical" >
+<RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#eaeaea"
+          
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp" >
+
+            <TextView
+                android:id="@+id/Qual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:paddingTop="3dip"
+                android:text="Experience Details"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </RelativeLayout>
+          <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+           
+            <EditText
+                android:id="@+id/compname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Company Name"
+                android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:layout_marginTop="50dp"
+                          android:inputType="textCapSentences"
+                        android:paddingTop="3dip"
+                   android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                />
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/startdate"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="From Date"
+                    android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                       android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/startdateselect"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/calender_icon" />
+
+                <EditText
+                    android:id="@+id/Enddate"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="To Date"
+                    android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                       android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/enddateselect"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/calender_icon" />
+            </TableRow>
+
+            <EditText
+                android:id="@+id/role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Role"
+                android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                         android:inputType="textCapSentences"
+                   android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                 />
+
+            <EditText
+                android:id="@+id/roledescr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                   android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                        android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                android:hint="Description about your role"
+                android:inputType="textCapSentences"/>
+
+            <EditText
+                android:id="@+id/lastsalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                   android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                        android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                android:hint="Last salary drawn "
+               android:inputType="number" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="15dp">
+
+
+
+                <Button
+                    android:id="@+id/nextcomp"
+                    style="?android:attr/buttonStyleSmall"
+                      android:layout_width="250dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/nextcomp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/next_btn"
+                    android:textColor="#ffffff"
+                    android:text="SUBMIT" />
+
+                <Button
+                    android:id="@+id/delete"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="250dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:text="DELETE"
+                     android:textColor="#6A287E"
+                    android:background="@drawable/upload_image_btn" />
+
+            </RelativeLayout>
+    </LinearLayout>
+     </ScrollView>
+        </LinearLayout>
+       
+
+</LinearLayout>

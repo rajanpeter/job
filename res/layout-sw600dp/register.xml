@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<RelativeLayout
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="469dp"
+    android:orientation="vertical"
+    android:background="@drawable/white_bg"
+    android:padding="10dp" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lname"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/radiomale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radiofemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup1"
+        android:src="@drawable/black_profile_image" />
+
+    <Button
+        android:id="@+id/imageselectz"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:background="@drawable/upload_image_btn"
+        android:textColor="#8d8d8d"
+        android:layout_marginLeft="5dp"
+        android:text="Upload Image" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lname"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textCapSentences"
+        android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                        android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lname"
+        android:layout_below="@+id/fname"
+        android:text="Last name"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:paddingBottom="3dip"
+        android:inputType="textCapSentences"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+        android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+         />
+
+       
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fname"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:text="First name"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/next1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/lname"
+        android:layout_below="@+id/imageselectz"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/next_btn"
+        android:text="NEXT"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
+
+</ScrollView>

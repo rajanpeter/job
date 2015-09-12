@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#eaeaea"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/graduation"
+            android:layout_marginTop="50dp" >
+
+            <TextView
+                android:id="@+id/Qual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="3dip"
+                android:text="Project Details"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/projectsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/projecttitle"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Project Size"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+            android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+            android:inputType="number" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/projectsize"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/prostartdate"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="From Date"
+                android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/prostartdateselect"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/calender_icon" />
+
+            <EditText
+                android:id="@+id/proenddate"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="To Date"
+                android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/proenddateselect"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+               android:background="@drawable/calender_icon"/>
+        </TableRow>
+
+        <EditText
+            android:id="@+id/prodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tableRow1"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+            android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+            android:hint="Project Description"
+             android:inputType="textCapSentences"  />
+
+        <EditText
+            android:id="@+id/prorole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/prodes"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+            android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+            android:hint="Your role in project"
+            android:inputType="textCapSentences" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/projecttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner1"
+            android:layout_below="@+id/spinner1"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:hint="Project Title"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+            android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+             android:inputType="textCapSentences"  />
+
+        <Button
+            android:id="@+id/nextpro"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/prorole"
+            android:textColor="#ffffff"
+            android:background="@drawable/next_btn"
+            android:text="SUBMIT"
+            />
+
+        <Button
+            android:id="@+id/delete"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/prorole"
+            android:layout_alignTop="@+id/nextpro"
+            android:background="@drawable/upload_image_btn"
+            android:text="DELETE"
+            android:textColor="#6A287E" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    android:orientation="vertical" >
+<RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#eaeaea"
+          
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="28dp" >
+
+            <TextView
+                android:id="@+id/Qual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:paddingTop="3dip"
+                android:text="Certification Details"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </RelativeLayout>
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/Certification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:hint="Certification name"
+              android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                        android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/Issuingorganization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Certification"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:hint="Issuing organization"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+              android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+             android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/Issueddate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Issuingorganization"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Issued Date"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+              android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/date"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/Issueddate"
+            android:layout_alignBottom="@+id/Issueddate"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/Issueddate"
+            android:background="@drawable/calender_icon"
+           />
+
+        <Button
+            android:id="@+id/delete"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+    android:layout_height="40dp"
+            android:layout_alignLeft="@+id/Issueddate"
+            android:layout_alignTop="@+id/nextcert"
+            android:background="@drawable/upload_image_btn"
+            android:text="DELETE"
+            android:textColor="#6A287E" />
+
+        <EditText
+            android:id="@+id/tilldate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Issueddate"
+            android:layout_below="@+id/Issueddate"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:focusable="false"
+             android:hint="Till Date"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+              android:background="@drawable/login_edittext"
+            android:inputType="textPersonName" />
+
+<Button
+    android:id="@+id/dates"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignBaseline="@+id/tilldate"
+    android:layout_alignBottom="@+id/tilldate"
+    android:layout_alignLeft="@+id/date"
+    android:background="@drawable/calender_icon" />
+
+<Button
+    android:id="@+id/nextcert"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:layout_alignRight="@+id/Issuingorganization"
+    android:layout_below="@+id/tilldate"
+    android:layout_marginTop="49dp"
+    android:background="@drawable/next_btn"
+    android:text="SUBMIT"
+    android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>

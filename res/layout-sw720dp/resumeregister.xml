@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="1146dp"
+        android:background="@drawable/white_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Total experience"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="3dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="3dip" >
+
+            <EditText
+                android:id="@+id/experience"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_edittext"
+                android:ems="10"
+                android:hint=" "
+                android:inputType="number"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Years"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/monthexp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_edittext"
+                android:ems="10"
+                android:hint=" "
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Months"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        
+<TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Relevant experience"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TableRow
+    android:id="@+id/tableRow3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:paddingBottom="3dip"
+    android:paddingLeft="10dip"
+    android:paddingTop="3dip" >
+
+    <EditText
+        android:id="@+id/releventexperience"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/login_edittext"
+        android:ems="10"
+        android:hint=" "
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Years"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/releventexpmonth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/login_edittext"
+        android:ems="10"
+        android:hint=" "
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Months"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</TableRow>
+<TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Current CTC per Annum"
+          android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <EditText
+            android:id="@+id/currentctc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Current CTC per Annum"
+             android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                        android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+            android:inputType="number" />
+<TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Expected CTC per Annum"
+            
+             android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <EditText
+            android:id="@+id/expectedctc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Expected CTC per Annum"
+             android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                        android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+           android:inputType="number" />
+<TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Current Role"
+             android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <EditText
+            android:id="@+id/currentrole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Current Role"
+             android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                        android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+            android:inputType="textCapSentences"  />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Notice period in days"
+              android:textAppearance="?android:attr/textAppearanceLarge" />
+<EditText
+            android:id="@+id/noticeperiod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Notice period in days"
+             android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                        android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+           android:inputType="number" />
+       <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Reason for change"
+              android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+            android:id="@+id/resonchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Reason for change"
+             android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+                        android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+             android:inputType="textCapSentences" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+                 android:layout_marginTop="50dp"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/prev"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+           
+                android:layout_weight="1"
+                android:textColor="#6A287E"
+                android:background="@drawable/upload_image_btn"
+                android:text="PREV" />
+
+            <Button
+                android:id="@+id/submit"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:background="@drawable/next_btn"
+                android:text="SUBMIT" />
+        </TableRow>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+
+     <dimen name="logowidth">150dp</dimen>
+      <dimen name="logoheight">90dp</dimen>
+ <dimen name="txt">30dp</dimen>
+    <dimen name="logotop">50dp</dimen>
+        <dimen name="height">150dp</dimen>
+            <dimen name="buttonheight">90dp</dimen>
+            <dimen name="buttonwidth">90dp</dimen>
+             <dimen name="layoutheight">1111dp</dimen>
+              <dimen name="left">115dp</dimen>
+</resources>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="463dp"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/jobname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#6A287E" />
+
+                <TableRow
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                      <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Company Name : "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/compname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                     android:layout_marginTop="5dp"
+                    android:text="Carmatec"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                </TableRow>
+				 <TableRow
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Brand Name : "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/braname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Text"
+                     android:layout_marginLeft="5dp"
+                     android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                </TableRow>
+                 <TableRow
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Job Status : "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Text"
+                     android:layout_marginTop="5dp"
+                      android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                </TableRow>
+              
+
+
+
+                <TextView
+                    android:id="@+id/interviewsummery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Application status"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#6A287E" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="10dp">
+
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                         <TextView
+                        android:id="@+id/written"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Written test"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    
+
+                    <Button
+                        android:id="@+id/writtenbutton"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/icon_reject" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                       <TextView
+                        android:id="@+id/communication"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Communication"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <Button
+                        android:id="@+id/communicationbutton"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/icon_reject" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    <TextView
+                    android:id="@+id/aptitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aptitude Test"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <Button
+                    android:id="@+id/aptitudebutton"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icon_reject" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    <TextView
+                    android:id="@+id/interview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Interview Round 1"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <Button
+                    android:id="@+id/interview1button"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icon_reject" />
+                    </TableRow>
+                      <TableRow
+                            android:id="@+id/tableRow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+                    <TextView
+                    android:id="@+id/interview2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Interview Round 2"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <Button
+                    android:id="@+id/interview2button"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icon_reject" />
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tableRow13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+                    <TextView
+                    android:id="@+id/interview3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Interview Round 3"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <Button
+                    android:id="@+id/interview3button"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icon_reject" />
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tableRow13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+                    <TextView
+                    android:id="@+id/interview4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Interview Round 4"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <Button
+                    android:id="@+id/interview4button"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icon_reject" />
+                        </TableRow>
+                </TableLayout>
+
+                <TableRow
+                    android:id="@+id/table1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="50dp"
+                   >
+                          <Button
+                    android:id="@+id/button6"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icon_tick" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="10sp"
+                    android:text=" Qualified"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <Button
+                    android:id="@+id/button7"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_scheduled" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text=" Scheduled"
+                     android:textSize="10sp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <Button
+                    android:id="@+id/button8"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_reject" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text=" Rejected"
+                     android:textSize="10sp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                 <Button
+                    android:id="@+id/button81"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_hold" />
+
+                <TextView
+                    android:id="@+id/textView111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text=" On-hold"
+                     android:textSize="10sp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                </TableRow>
+            
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

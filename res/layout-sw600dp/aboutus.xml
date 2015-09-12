@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical" >
+  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:orientation="vertical" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CLIMB Education is a training division of Carmatec IT Solutions Pvt. Ltd. a veteran in the field of providing IT Solutions and services across the globe. With over 9 years of professional experience in the IT industry, Carmatec aims to preach the same to learners who aspire to achieve the best possible knowledge and skills to crack open the IT world."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="We at CLIMB aim to provide our learners with INDUSTRY ORIENTED courses, which are full career programs so that the current skills and knowledge requirements in the IT sector are met. To make the learning experience truly unique, CLIMB provides its learners with focused CAREER GUIDANCE, opportunity to work with LIVE SERVERS, sessions from mentors who are presently working in the industry, chance for INTERNSHIP with the parent company and 100% JOB ASSISTANCE. Our student mentor System and Hands-on-Training approach towards teaching are designed to bring out the best in you."
+        android:textAppearance="?android:attr/textAppearanceMedium"  />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="To offer high quality IT training programs that are industry relevant in the domains of hardware, operating system and software. The programs are created through real time market research and application so that the knowledge body is thoroughly tested and applied in production environment. We intent to expand our market presence by using remote delivery technology platforms to increase efficiency and reduce cost thereby delivering programs that are affordable."
+       android:textAppearance="?android:attr/textAppearanceMedium"  />
+
+     </LinearLayout>
+ </ScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines.5 -->
+
+     <dimen name="logowidth">70dp</dimen>
+      <dimen name="logoheight">40dp</dimen>
+    <dimen name="txt">13dp</dimen>
+    <dimen name="logotop">35dp</dimen>
+        <dimen name="height">100dp</dimen>
+            <dimen name="buttonheight">60dp</dimen>
+            <dimen name="buttonwidth">60dp</dimen>
+               <dimen name="layoutheight">415dp</dimen>
+                <dimen name="left">32dp</dimen>
+                
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.22"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/jobtitle"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Job Title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#6A287E" />
+
+            <TextView
+                android:id="@+id/jobdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="5dp"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="5dp"
+                android:text="Start Date"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/startdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_alignLeft="@+id/experience"
+                android:layout_alignTop="@+id/textView6"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="5dp"
+                android:text="End Date"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/enddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView7"
+                android:layout_alignBottom="@+id/textView7"
+                android:layout_alignLeft="@+id/startdate"
+                android:text="Small Text"
+                 android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView7"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="10dp"
+                android:text="Job Description : "
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/jobtitle"
+                android:layout_below="@+id/jobtitle"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:text="Skill Set Required"
+                 android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Button
+                android:id="@+id/applyjob"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/jobdes"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/next_btn"
+                android:text="APPLY"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/share"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/applyjob"
+                android:layout_alignRight="@+id/applyjob"
+                android:layout_below="@+id/applyjob"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/upload_image_btn"
+                android:text="SHARE"
+                android:textColor="#6A287E" />
+
+            <TextView
+                android:id="@+id/experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView5"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/textView4"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="5dp"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/skills"
+                android:layout_below="@+id/skills"
+                android:layout_marginTop="5dp"
+                android:text="Experience"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/white_bg">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/specialin"
+            android:layout_below="@+id/graduationspinner"
+            android:layout_marginTop="10dp"
+            android:text="Specialization"
+              android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:id="@+id/specialin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/university"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Specialization"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                           android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+             android:inputType="textCapSentences"  >
+
+        </EditText>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/university"
+            android:layout_below="@+id/specialin"
+            android:layout_marginTop="10dp"
+              android:paddingLeft="10dp"
+            android:text="University/Institute"
+           android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:id="@+id/university"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/year"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Board/University/Institute"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+              android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+            android:inputType="textCapSentences"  />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/year"
+            android:layout_below="@+id/university"
+            android:layout_marginTop="10dp"
+            android:text="Year of passing"
+              android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/score"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Year of passing"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                          android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/score"
+            android:layout_below="@+id/year"
+            android:layout_marginTop="10dp"
+            android:text="Marks in percentage"
+              android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Marks in percentage"
+            android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="3dip"
+                          android:background="@drawable/login_edittext"
+                        android:singleLine="true"
+           android:inputType="number" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#eaeaea"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/graduation"
+            android:layout_marginTop="80dp" >
+
+            <TextView
+                android:id="@+id/Qual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dip"
+                android:paddingLeft="10dip"
+                android:text="Educational Qualification"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/graduation"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginTop="50dp"
+                android:paddingLeft="10dp"
+            
+            android:text="Basic / Graduation"
+             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <Button
+            android:id="@+id/nextedu"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/score"
+            android:textColor="#ffffff"
+            android:background="@drawable/next_btn"
+            android:text="SUBMIT" />
+
+        <Button
+            android:id="@+id/delete"
+            style="?android:attr/buttonStyleSmall"
+             android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_alignBaseline="@+id/nextedu"
+            android:layout_alignBottom="@+id/nextedu"
+            android:layout_alignLeft="@+id/score"
+            android:background="@drawable/upload_image_btn"
+            android:text="DELETE"
+           android:textColor="#6A287E"
+            />
+
+        <Spinner
+            android:id="@+id/graduationspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+              android:paddingLeft="10dp"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
